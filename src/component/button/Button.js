@@ -3,13 +3,16 @@ import styles from './button.module.css'
 export default class Button extends Component {
     constructor(props){
         super(props)
-        const onClick = this.props
+        this.loadMoreBtn = this.loadMoreBtn.bind(this)
+    }
+    loadMoreBtn(){
+      alert('No more jobs: class component testing')
     }
   render() {
     
     return (
       <div>
-        <button className={styles.button}>Load more</button>
+        <button className={styles.button} onClick={this.loadMoreBtn}>Load more</button>
       </div>
     )
   }

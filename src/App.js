@@ -6,6 +6,9 @@ import data from "./data/data.json"; // import data.json
 
 
 function App() {
+  const handleLoadMore = () => {
+    alert('No more job offers')
+  }
   return (
     <div className="App">
       <div className={styles.nav}><NavBar/></div>
@@ -14,7 +17,7 @@ function App() {
       </div>
       <div style={{display:"flex", justifyConent: "center", alignItems: "center"}} className={styles.button_container}>
        
-        <Button/>
+        <Button />
        
        
       </div>
