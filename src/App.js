@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from "./App.module.css";
+import Button from "./component/button/Button";
+import Card from "./component/card/Card";
+import NavBar from "./component/navbar/NavBar";
+import data from "./data/data.json"; // import data.json
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className={styles.nav}><NavBar/></div>
+      <div className={styles.job_lists}>
+        <Card data={data} />
+      </div>
+      <div style={{display:"flex", justifyConent: "center", alignItems: "center"}} className={styles.button_container}>
+       
+        <Button/>
+       
+       
+      </div>
+      
     </div>
   );
 }

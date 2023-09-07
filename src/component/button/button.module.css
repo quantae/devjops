@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    background: var(--primary);
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--white);
+    border: none;
+
+    font-weight: 700;
+    &:active {
+        border: solid 2px var(--white);
+        
+        color: var(--white);
+    };
+    &:hover {
+cursor: pointer;
+box-shadow: 0 0 2px 2px var(--primary);
+    }
+}
